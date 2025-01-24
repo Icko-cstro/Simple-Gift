@@ -1,0 +1,2 @@
+const e=document.getElementById("content"),t={home:"<h1>Home</h1><p>Welcome to the home page!</p>",about:"<h1>About</h1><p>This is the about page.</p>",contact:"<h1>Contact</h1><p>Contact us at example@example.com.</p>"};function o(){let o=window.location.hash.substring(1)||"home";e.innerHTML=t[o]||t.home}window.addEventListener("hashchange",o),window.addEventListener("load",o);
+//# sourceMappingURL=index.6ca43e5b.js.map
