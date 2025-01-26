@@ -12,10 +12,11 @@ export function renderLoginPage() {
     const clickedMeComponent = ClickedMe(); // Create the ClickedMe component
 
     // Create a container to hold both the form and the ClickedMe component
-    const container = document.createElement('div')
-    container.appendChild(clickedMeComponent);;
+    const container = document.createElement('div');
+    container.className = 'main-container'; // Add a class for styling
+
+    container.appendChild(clickedMeComponent);
     container.appendChild(formContainer);
-    
 
     // Use the LoginLayout to wrap the container
     return LoginLayout(container);

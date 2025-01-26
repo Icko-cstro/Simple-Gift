@@ -1,95 +1,145 @@
-/* styles/styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background:linear-gradient(to left,#F19776,#FF7777);
-    cursor: url(https://res.cloudinary.com/drkmgpcad/image/upload/v1736868845/jpz1oydzafymjynuv80v.png), auto;
-  }
-  
-  header, footer {
-    background:linear-gradient(to left,#845241,#8c4342);
-    padding: 10px;
-    text-align: center;
-
-  }
-  .header-txt{
-    font-size:4.2rem; ;
-    color: #FFD79E;
-    padding: 0%;
-    margin: 0%;
-    text-align: center;
-    -webkit-text-stroke: 1px #C4D3DD;
-
-  }
-  .footer-txt{
-
-    color: #FFD79E;
-    padding: 10px;
-    text-align: center;
-    text-shadow: 5px #C4D3DD;
-  }
-  .main-container {
-    
-    justify-content: space-between 20px; /* Space between the items */
-    align-items: flex-start; /* Align items to the top */
-    padding: 20px;}
-  
-  .login-container {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.45);
-    padding: 20px;
-    border-radius: 20px;
-    margin-left: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, #F19776, #FF7777);
+  cursor: url(https://res.cloudinary.com/drkmgpcad/image/upload/v1736868845/jpz1oydzafymjynuv80v.png), auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+header {
+  background: rgba(0, 0, 0, 0.450);
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+
+
+}
+
+.header-txt {
+  font-size: 4.2rem;
+  color: #FFD79E;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+  text-shadow: 0.75px 0 .5px #C4D3DD,   -0.75px 0 .5px #C4D3DD,    0 0.75px .5px #C4D3DD,      0 -0.75px .5px #C4D3DD,
+              0.75px 0.75px .5px #C4D3DD,  -0.75px -0.75px .5px #C4D3DD, 0.75px -0.75px .5px #C4D3DD, -0.75px 0.75px .5px #C4D3DD;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
+  width: 100%;
+}
+
+.login-container {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.45);
+  padding: 20px;
+  border-radius: 20px;
+  justify-self: center;
+}
+
 .login-container input[type="text"],
 .login-container input[type="password"] {
-    margin: 5px 5px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 20px;
+  margin: 5px 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
 }
+
 .login-container button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  #clickable-div {
-    width: 60%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: url(https://res.cloudinary.com/drkmgpcad/image/upload/v1736868991/zdpv46rkbmqv1gcyvfd5.png), auto;
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#clickable-div {
+  width: 60%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: url(https://res.cloudinary.com/drkmgpcad/image/upload/v1736868991/zdpv46rkbmqv1gcyvfd5.png), auto;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
 #clickable-div img {
-    padding-top: 20px;
-    padding-left: 20px;
-    position: absolute;
-    display: none;
-    width: 250px; /* Set the width of the image */
-    height: 150px; /* Set the height of the image */
-    display: block; /* Ensure the image is displayed */
+  padding-top: 20px;
+  padding-left: 20px;
+  position: absolute;
+  display: none;
+  width: 250px;
+  height: 150px;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: auto;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.450);
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.footer-txt {
+  color: #FFD79E;
+  white-space: nowrap; /* Keep the text in a single line */
+  display: inline-block; /* Allow the text to be animated */
+  /* Remove the animation properties */
+
+}
+.play-button {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  color: #FFD79E; /* Match the text color of the lyrics */
+  font-size: 1.5rem; /* Match the font size of the lyrics */
+  cursor: pointer; /* Change cursor to pointer */
+  text-align: left; /* Align text to the left */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: inline; /* Make it inline to match lyrics */
+}
+
+.play-button:hover {
+  text-decoration: underline; /* Optional: underline on hover */
 }

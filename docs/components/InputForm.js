@@ -2,6 +2,12 @@ export function InputForm(fields) {
     const container = document.createElement('div');
     container.className = 'login-container';
 
+    // Create and append the login label
+    const loginLabel = document.createElement('h1');
+    loginLabel.textContent = 'Log in';
+    container.appendChild(loginLabel);
+
+
     fields.forEach(field => {
         // Create a wrapper for the floating input
         const wrapper = document.createElement('div');
