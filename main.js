@@ -1,7 +1,7 @@
 import Home from './pages/home.js'
 import PageNotFound from './pages/pageNotFound.js';
 import SPA from './core/spa.js';
-import Login from './pages/loginPage/login.js';
+import Login from './pages/login.js';
 
 
 

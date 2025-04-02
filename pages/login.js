@@ -1,8 +1,9 @@
-import Layout from '../../layouts/default.js';
-import LoginForm from '../../components/loginForm.js';
-import Header from '../../components/header.js';
-import Footer from '../../components/footer.js';
-import './login.css';
+import Layout from '../layouts/default.js';
+import LoginForm from '../components/loginForm.js';
+import Header from '../components/header.js';
+import Footer from '../components/footer.js';
+
+
 
 export default function Login() {
   const { header, main, footer } = Layout(this.root);
