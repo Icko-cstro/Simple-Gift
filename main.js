@@ -23,6 +23,9 @@ app.add('/home', Home);
 
 // or, you could also define a route using Regular Expression with or without named groups
 
+// Add a catch-all route for undefined paths
+app.add('*', PageNotFound);
+
 // Ensure our app is running
 app.handleRouteChanges();
 
