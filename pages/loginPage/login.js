@@ -1,7 +1,7 @@
-import Layout from '../../layouts/default';
-import LoginForm from '../../components/loginForm';
-import Header from '../../components/header';
-import Footer from '../../components/footer';
+import Layout from '../../layouts/default.js';
+import LoginForm from '../../components/loginForm.js';
+import Header from '../../components/header.js';
+import Footer from '../../components/footer.js';
 import './login.css';
 
 export default function Login() {

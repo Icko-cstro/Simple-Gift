@@ -1,7 +1,7 @@
-import Navigation from '../components/navigation';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import Layout from '../layouts/default';
+import Navigation from '../components/navigation.js';
+import Header from '../components/header.js';
+import Footer from '../components/footer.js';
+import Layout from '../layouts/default.js';
 
 export default function PageNotFound() {
   const { header, navigation, main, footer } = Layout(this.root);
