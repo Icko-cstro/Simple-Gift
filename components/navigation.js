@@ -16,7 +16,7 @@ export default function Navigation(root) {
     logoutLink.addEventListener('click', (e) => {
       e.preventDefault();
       localStorage.removeItem('isLoggedIn');
-      window.location.href = '/';
+      window.location.href = '/Simpe-Gift/';
     });
   }
 }

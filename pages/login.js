@@ -26,7 +26,7 @@ export default function Login() {
 
     if (username === 'Riechelle' && password === 'itsmy21st') {
       localStorage.setItem('isLoggedIn', 'true');
-      this.redirect('/home');
+      this.redirect('/Simpe-Gift/home');
     } else {
       errorMessage.style.display = 'block';
     }
