@@ -67,8 +67,8 @@ class SPA {
   execute(path) {
     const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
-    if (!isLoggedIn && path !== '/') {
-      this.redirect('/');
+    if (!isLoggedIn && path !== '/Simpe-Gift/') {
+      this.redirect('/Simpe-Gift/');
       return;
     }
 

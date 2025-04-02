@@ -15,10 +15,10 @@ const app = new SPA({
 });
 
 // Add the login route
-app.add('/', Login);
+app.add('/Simpe-Gift/', Login);
 
 // our home page. by default you could define routes using string
-app.add('/home', Home);
+app.add('/Simpe-Gift/home', Home);
 
 
 // or, you could also define a route using Regular Expression with or without named groups
