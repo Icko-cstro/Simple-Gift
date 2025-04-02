@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, #F19776, #FF7777);
+  cursor: url(https://res.cloudinary.com/drkmgpcad/image/upload/v1736868845/jpz1oydzafymjynuv80v.png), auto;
+  display: flex;
+  flex-direction: column; /* Ensure body takes full height */
+  min-height: 100vh; /* Full height for body */
+}
+
+html, body {
+  height: 100%; /* Ensure the body takes full height */
+}
+
+#container {
+  display: flex;
+  flex-direction: column; /* Ensure the layout is vertical */
+  min-height: 100vh; /* Full height for the container */
+}
+
+header {
+  margin-top: auto; 
+  background: rgba(0, 0, 0, 0.450);
+  padding: 10px;
+  text-align: center;
+}
+
+.headerTxt {
+  font-size: 2rem; /* Smaller font size for mobile */
+  color: #FFD79E;
+  margin: 0;
+}
+
+main {
+  flex: 1; /* Allow main to grow and take available space */
+  min-height: 200px; /* Optional: Set a minimum height */
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.450);
+  padding: 10px;
+  text-align: center;
+}
+
+.footerTxt {
+  color: #FFD79E;
+  white-space: nowrap; /* Keep the text in a single line */
+  display: inline-block; /* Allow the text to be animated */
+}
+
+/* Additional styles for the swiper */
+.swiper.marquee-swiper {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    white 10%,
+    white 90%,
+    transparent 100%
+  );
+}
+
+.swiper-wrapper.marquee-swiper {
+  transition-timing-function: linear;
+  align-items: center;
+}
+
+/* Individual slides */
+.swiper-slide.marquee-swiper {
+  width: auto; /* Allow width to adjust based on content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  width: auto;
+
+}
+/* Media Queries for larger screens */
+@media (min-width: 768px) {
+  .headerTxt {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+
+  .swiper.marquee-swiper {
+    margin-top: 4rem;
+  }
+}

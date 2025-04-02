@@ -1,0 +1,40 @@
+
+  
+  .loginContainer {
+    width: 70%; /* Full width for mobile */
+    max-width: 400px; /* Limit width for larger screens */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  }
+  
+  /* Additional styles for inputs and button */
+  .loginContainer input[type="text"],
+  .loginContainer input[type="password"] {
+    margin: 5px  ;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    width: 90%;
+  }
+  
+  .loginContainer button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4e3838;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .loginContainer button:hover{
+      background-color: #2b1f1f;
+  }
+  
